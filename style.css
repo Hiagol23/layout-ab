@@ -1,10 +1,11 @@
-/* RESET */
+/*reset*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a {
+
+a{
     text-decoration: none;
     color: inherit;
 }
@@ -14,12 +15,13 @@ ul, ol, li{
 }
 /*fim reset*/
 
-body {
+body{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    padding-inline: 80px;
+    flex-direction:column;
+    padding-inline:80px;
 }
+
 header{
     height: 200px;
     display: flex;
@@ -29,26 +31,59 @@ header{
 .logo{
     height: 96px;
     width: 96px;
-    background-color: lightgray;
+    background-color: lightgrey;
 }
+
 .menu ul{
     display: flex;
     gap: 32px;
     font-size: 32px;
 }
+
 main{
     flex-grow: 1;
-    background-color: pink;
+    display: flex;
 }
 .conteudo{
     width: 50%;
-    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.conteudo h1{
+    font-size: 96px;
+}
+.conteudo p{
+    width: 80%;
+    font-size: 40px;
+}
+.acao button{
+    height: 80px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+}
+.social{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.social div{
+    height: 96px;
+    width: 96px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
 .destaque{
     width: 50%;
     background-color: lightgrey;
 }
+
 footer{
     height: 100px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
